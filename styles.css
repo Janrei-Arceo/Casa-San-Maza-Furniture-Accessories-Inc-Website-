@@ -75,6 +75,71 @@ nav ul a.active {
     color: #fff;
 }
 
+main {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: 1fr 1fr;
+    min-height: 600px;
+    width: 100%;
+    background-color: #654a37;
+}
+
+.main-logo {
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 60px;
+    background-color: #654a37;
+}
+
+.main-logo img {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+main p {
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 45px 50px;
+    background-color: #654a37;
+    color: #f4eee7;
+    font-size: 18px;
+    line-height: 1.8;
+    letter-spacing: 0.3px;
+    text-align: left;
+}
+
+main p span {
+    display: block;
+    max-width: 500px;
+}
+.csm2 {
+    grid-column: 2;
+    grid-row: 1;
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.csm3 {
+    grid-column: 2;
+    grid-row: 2;
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
 footer {
     background-color: #1d1d1d;
     color: #f4eee7;
@@ -84,21 +149,40 @@ footer {
 }
 
 @media (max-width: 700px) {
-    header {
-        padding: 8px 15px;
+    main {
+        display: flex;
+        flex-direction: column;
+        min-height: auto;
     }
 
-    .logo {
-        font-size: 24px;
-        letter-spacing: 2px;
+    .main-logo {
+        order: 1;
+        padding: 40px 25px 20px;
     }
 
-    nav ul {
-        gap: 15px;
+    .main-logo img {
+        width: 180px;
     }
 
-    nav ul a {
-        font-size: 8px;
-        letter-spacing: 1px;
+    main p {
+        order: 2;
+        padding: 30px 25px 40px;
+        font-size: 15px;
+    }
+
+    .csm2 {
+        order: 3;
+        height: 280px;
+        min-height: 0;
+    }
+
+    .csm3 {
+        order: 4;
+        height: 280px;
+        min-height: 0;
+    }
+
+    footer {
+        padding: 40px 20px 25px;
     }
 }

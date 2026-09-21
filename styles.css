@@ -13,11 +13,11 @@ body {
 
 header {
     background-color: #d9ad8d;
-    padding: 8px 30px;
+    padding: 10px 30px;
     position: sticky;
     top: 0;
     z-index: 1000;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    border-bottom: 3px solid rgba(0, 0, 0, 0.15);
 }
 
 nav {
@@ -59,7 +59,7 @@ nav li {
 nav ul a {
     color: #000;
     text-decoration: none;
-    font-size: 11px;
+    font-size: 15px;
     font-weight: 500;
     font-family: 'Inter', sans-serif;
     text-transform: uppercase;
@@ -91,11 +91,11 @@ main {
     align-items: center;
     justify-content: center;
     padding: 30px 60px;
-    background-color: #654a37;
+    background-color: #fff;
 }
 
 .main-logo img {
-    width: 300px;
+    width: 500px;
     max-width: 100%;
     height: auto;
     object-fit: contain;
@@ -105,12 +105,12 @@ main p {
     grid-column: 1;
     grid-row: 2;
     display: flex;
-    align-items: center;
+    align-items: top;
     justify-content: center;
-    padding: 30px 45px 50px;
-    background-color: #654a37;
-    color: #f4eee7;
-    font-size: 18px;
+    padding: 30px 20px 50px;
+    background-color: #fff;
+    color: #000000;
+    font-size: 20px;
     line-height: 1.8;
     letter-spacing: 0.3px;
     text-align: left;

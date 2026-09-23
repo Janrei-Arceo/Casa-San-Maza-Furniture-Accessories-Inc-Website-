@@ -148,6 +148,24 @@ footer {
     border-top: 1px solid rgba(244, 238, 231, 0.2);
 }
 
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+    padding: 60px 8%;
+}
+
+.locationm, .contact-info {
+    width: 45%;
+}
+
+.locationm h2, .contact-info h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
 @media (max-width: 700px) {
     main {
         display: flex;

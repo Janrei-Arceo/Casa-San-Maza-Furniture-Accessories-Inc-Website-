@@ -191,6 +191,16 @@ div h3 {
     padding: 30px;
     border-radius: 30px;
 }
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #fff;
+    color: #222;
+    padding: 30px;
+    border-radius: 30px;
+}
 @media (max-width: 700px) {
     main {
         display: flex;

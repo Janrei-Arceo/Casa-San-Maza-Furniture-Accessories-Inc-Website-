@@ -201,6 +201,10 @@ div h3 {
     padding: 30px;
     border-radius: 30px;
 }
+.contact-form {
+    grid: 2;
+    left: 10rem;
+}
 @media (max-width: 700px) {
     main {
         display: flex;

@@ -351,6 +351,39 @@ main:has(.about-section) {
     display: block;
 }
 
+.about-audio {
+    width: 100%;
+    padding: 50px 20px;
+    background-color: #f4eee7;
+    color: #1d1d1d;
+    text-align: center;
+}
+
+.about-audio h2 {
+    font-size: 28px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.about-audio p {
+    background-color: transparent;
+    color: #654a37;
+    display: block;
+    padding: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.about-audio audio {
+    width: 100%;
+    max-width: 500px;
+}
+
+.home-showroom {
+    display: block;
+}
+
 @media (max-width: 900px) {
     nav ul {
         gap: 20px;

@@ -380,10 +380,18 @@ main:has(.about-section) {
     max-width: 500px;
 }
 
-.home-showroom {
+main:has(.showroom-page) {
     display: block;
+    width: 100%;
+    min-height: auto;
+    background-color: #1d1d1d;
 }
 
+.showroom-intro {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #654a37;
+}
 @media (max-width: 900px) {
     nav ul {
         gap: 20px;

@@ -2,28 +2,28 @@
 <html lang="en">
     <!--
         Author: Janrei Arceo
-        Section:WD-201
+        Section: WD-201
         Activity: Website
     -->
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Casa San Maza Furniture & Accessories Inc</title>
-
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="CSM_Script.js"></script>
 </head>
-
 
 <body>
     <header>
         <nav>
             <div class="logo"><a href="index.html">CSM</a></div>
-            <ul>
+
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+            <ul id="nav-menu">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="showroom.html">Showroom</a></li>
                 <li><a href="about.html">About</a></li>
@@ -32,12 +32,12 @@
         </nav>
     </header>
 
-
-    <main>
+    <main class="home">
         <div class="main-logo">
             <img src="img/csm-logo.png" alt="CSM Logo">
         </div>
-        <p>
+
+        <p class="home-description">
             <span>
                 Casa San Maza Furniture & Accessories, Inc.
                 is an interior design and furniture-making company
@@ -48,28 +48,17 @@
             </span>
         </p>
 
-        
-
-        <img src="img/CSM2.jpg" alt="Dining Room with Kitchen" class="csm2"> 
+        <img src="img/CSM2.jpg" alt="Dining Room with Kitchen" class="csm2">
         <img src="img/CSM3.jpg" alt="Dining Room with Kitchen" class="csm3">
 
         <section class="link-show">
             <p>Want to see more?</p>
             <a href="showroom.html" class="home-showroom">Visit Our Showroom</a>
         </section>
-        
-
-
-
     </main>
 
     <footer>
-
         <p>&copy; 2026 Casa San Maza Furniture & Accessories Inc | All rights reserved</p>
-
     </footer>
-
-
 </body>
-
 </html>

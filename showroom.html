@@ -16,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="CSM_Script.js"></script>
 </head>
 
 
@@ -23,7 +24,10 @@
     <header>
         <nav>
             <div class="logo"><a href="index.html">CSM</a></div>
-            <ul>
+
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+            <ul id="nav-menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="showroom.html" class="active">Showroom</a></li>
                 <li><a href="about.html">About</a></li>
@@ -37,6 +41,14 @@
             <section class="showroom-intro">
                 <h1>OUR SHOWROOM</h1>
                 <p>Explore our collection of interior designs, furniture, and thoughtfully crafted spaces.</p>
+            </section>
+
+            <section class="about-audio">
+                <p>Take a moment to experience the atmosphere of Casa San Maza.</p>
+                <audio controls>
+                    <source src="media/piano-placeholder.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
             </section>
 
             <section class="showroom-gallery">
@@ -84,9 +96,7 @@
 
     <footer>
 
-        <p>
-            &copy; 2026 Casa San Maza Furniture & Accessories Inc
-        </p>
+        <p>&copy; 2026 Casa San Maza Furniture & Accessories Inc | All rights reserved</p>
 
     </footer>
 

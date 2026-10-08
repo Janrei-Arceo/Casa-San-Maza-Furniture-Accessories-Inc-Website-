@@ -16,7 +16,7 @@ header {
     padding: 10px 35px;
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 10;
     border-bottom: 3px solid rgba(0, 0, 0, 0.15);
 }
 
@@ -63,6 +63,15 @@ nav ul a {
 nav ul a:hover,
 nav ul a.active {
     color: #fff;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #000;
 }
 
 main.home {
@@ -128,7 +137,7 @@ main.home {
     display: block;
 }
 
-.link-show {
+.link-showroom {
     grid-column: 1 / 3;
     display: flex;
     flex-direction: column;
@@ -171,9 +180,8 @@ footer {
     border-top: 1px solid rgba(244, 238, 231, 0.2);
 }
 
-main.contact-page {
+.contact-page {
     width: 100%;
-    background-color: transparent;
 }
 
 .contact {
@@ -319,7 +327,7 @@ main.contact-page {
     background-color: #4d382a;
 }
 
-main.about-page {
+.about-page {
     width: 100%;
     background-color: #f4eee7;
 }
@@ -340,31 +348,6 @@ main.about-page {
     font-size: 22px;
     line-height: 1.9;
     text-align: center;
-}
-
-.about-audio {
-    width: 100%;
-    padding: 50px 20px;
-    background-color: #f4eee7;
-    color: #1d1d1d;
-    text-align: center;
-}
-
-.about-audio h2 {
-    font-size: 28px;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
-}
-
-.about-audio p {
-    color: #654a37;
-    margin-bottom: 20px;
-    font-size: 15px;
-}
-
-.about-audio audio {
-    width: 100%;
-    max-width: 500px;
 }
 
 .about-video {
@@ -388,7 +371,7 @@ main.about-page {
     display: block;
 }
 
-main.showroom-page {
+.showroom-page {
     width: 100%;
     background-color: #f4eee7;
 }
@@ -413,6 +396,25 @@ main.showroom-page {
     margin: auto;
     color: #f4eee7;
     font-size: 16px;
+}
+
+.showroom-audio {
+    width: 100%;
+    padding: 45px 20px;
+    background-color: #f4eee7;
+    color: #1d1d1d;
+    text-align: center;
+}
+
+.showroom-audio p {
+    color: #654a37;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.showroom-audio audio {
+    width: 100%;
+    max-width: 500px;
 }
 
 .showroom-gallery {
@@ -456,16 +458,6 @@ main.showroom-page {
     color: #654a37;
     font-size: 15px;
 }
-.menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 28px;
-    cursor: pointer;
-    color: #000;
-}
-
-
 
 @media (max-width: 900px) {
     nav ul {
@@ -521,10 +513,6 @@ main.showroom-page {
         display: flex;
     }
 
-    nav li {
-        margin: 0;
-    }
-
     nav ul a {
         display: block;
         padding: 12px 20px;
@@ -534,26 +522,11 @@ main.showroom-page {
 
 @media (max-width: 700px) {
     header {
-        padding: 15px 20px;
-    }
-
-    nav {
-        flex-direction: column;
-        gap: 15px;
+        padding: 12px 20px;
     }
 
     .logo {
         font-size: 28px;
-    }
-
-    nav ul {
-        gap: 15px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    nav ul a {
-        font-size: 12px;
     }
 
     main.home {
@@ -647,6 +620,10 @@ main.showroom-page {
         font-size: 14px;
     }
 
+    .showroom-audio {
+        padding: 35px 20px;
+    }
+
     .showroom-gallery {
         padding: 30px 20px;
         gap: 35px;
@@ -674,13 +651,12 @@ main.showroom-page {
         font-size: 25px;
     }
 
-    nav ul {
-        gap: 10px;
+    .menu-toggle {
+        font-size: 25px;
     }
 
-    nav ul a {
-        font-size: 10px;
-        letter-spacing: 0.8px;
+    nav ul {
+        width: 180px;
     }
 
     .main-logo {

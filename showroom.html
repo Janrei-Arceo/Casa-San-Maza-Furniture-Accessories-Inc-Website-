@@ -2,16 +2,13 @@
 <html lang="en">
     <!--
         Author: Janrei Arceo
-        Section:WD-201
+        Section: WD-201
         Activity: Website
     -->
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Casa San Maza Furniture & Accessories Inc</title>
-
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,13 +16,12 @@
     <script src="CSM_Script.js"></script>
 </head>
 
-
 <body>
     <header>
         <nav>
             <div class="logo"><a href="index.html">CSM</a></div>
 
-            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <button class="menu-toggle" type="button" onclick="toggleMenu()" aria-label="Open menu">☰</button>
 
             <ul id="nav-menu">
                 <li><a href="index.html">Home</a></li>
@@ -36,71 +32,73 @@
         </nav>
     </header>
 
+    <main class="showroom-page">
+        <section class="showroom-intro">
+            <h1>OUR SHOWROOM</h1>
+            <p>Explore our collection of interior designs, furniture, and thoughtfully crafted spaces.</p>
+        </section>
 
-        <main class="showroom-page">
-            <section class="showroom-intro">
-                <h1>OUR SHOWROOM</h1>
-                <p>Explore our collection of interior designs, furniture, and thoughtfully crafted spaces.</p>
-            </section>
+        <section class="showroom-audio">
+            <p>Take a moment to experience the atmosphere of Casa San Maza.</p>
 
-            <section class="about-audio">
-                <p>Take a moment to experience the atmosphere of Casa San Maza.</p>
-                <audio controls>
-                    <source src="media/piano-placeholder.mp3" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
-            </section>
+            <audio controls>
+                <source src="media/piano-placeholder.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
 
-            <section class="showroom-gallery">
-                <div class="showroom-item">
-                    <img src="img/CSM11.jpg" alt="Modern Bedroom">
-                    <div class="showroom-caption">
-                        <h2>Bedroom</h2>
-                        <p>Comfortable spaces designed with style and functionality.</p>
-                    </div>
+        <section class="showroom-gallery">
+
+            <div class="showroom-item">
+                <img src="img/CSM11.jpg" alt="Modern Bedroom">
+
+                <div class="showroom-caption">
+                    <h2>Bedroom</h2>
+                    <p>Comfortable spaces designed with style and functionality.</p>
                 </div>
+            </div>
 
-                <div class="showroom-item">
-                    <img src="img/CSM10.jpg" alt="Elegant dining room">
-                    <div class="showroom-caption">
-                        <h2>Dining Area</h2>
-                        <p>Thoughtfully designed spaces for gathering and connection.</p>
-                    </div>
-                </div>
+            <div class="showroom-item">
+                <img src="img/CSM10.jpg" alt="Elegant dining room">
 
-                <div class="showroom-item">
-                    <img src="img/CSM8.jpg" alt="Classic Living Room">
-                    <div class="showroom-caption">
-                        <h2>Living Room</h2>
-                        <p>A balance of comfort, simplicity, and timeless design.</p>
-                    </div>
+                <div class="showroom-caption">
+                    <h2>Dining Area</h2>
+                    <p>Thoughtfully designed spaces for gathering and connection.</p>
                 </div>
+            </div>
 
-                <div class="showroom-item">
-                    <img src="img/CSM13.jpg" alt="Modern kitchen">
-                    <div class="showroom-caption">
-                        <h2>Kitchen</h2>
-                        <p>Functional interiors with carefully selected details.</p>
-                    </div>
-                </div>
+            <div class="showroom-item">
+                <img src="img/CSM8.jpg" alt="Classic Living Room">
 
-                <div class="showroom-item">
-                    <img src="img/CSM15.jpg" alt="Custom furniture">
-                    <div class="showroom-caption">
-                        <h2>Custom Furniture</h2>
-                        <p>Furniture crafted to complement each unique space.</p>
-                    </div>
+                <div class="showroom-caption">
+                    <h2>Living Room</h2>
+                    <p>A balance of comfort, simplicity, and timeless design.</p>
                 </div>
-            </section>
-        </main>
+            </div>
+
+            <div class="showroom-item">
+                <img src="img/CSM13.jpg" alt="Modern kitchen">
+
+                <div class="showroom-caption">
+                    <h2>Kitchen</h2>
+                    <p>Functional interiors with carefully selected details.</p>
+                </div>
+            </div>
+
+            <div class="showroom-item">
+                <img src="img/CSM15.jpg" alt="Custom furniture">
+
+                <div class="showroom-caption">
+                    <h2>Custom Furniture</h2>
+                    <p>Furniture crafted to complement each unique space.</p>
+                </div>
+            </div>
+
+        </section>
+    </main>
 
     <footer>
-
         <p>&copy; 2026 Casa San Maza Furniture & Accessories Inc | All rights reserved</p>
-
     </footer>
-
-
 </body>
-
 </html>

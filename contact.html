@@ -2,31 +2,25 @@
 <html lang="en">
     <!--
         Author: Janrei Arceo
-        Section:WD-201
+        Section: WD-201
         Activity: Website
     -->
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Casa San Maza Furniture & Accessories Inc</title>
-
+    <title>Contact Us | Casa San Maza Furniture & Accessories Inc.</title>
+    <meta name="description" content="Contact Casa San Maza Furniture & Accessories Inc. for furniture inquiries, consultation requests, and other questions.">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script src="CSM_Script.js"></script>
+    <script src="CSM_Script.js" defer></script>
 </head>
-
-
 <body>
     <header>
         <nav>
             <div class="logo"><a href="index.html">CSM</a></div>
-
-            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-
+            <button class="menu-toggle" type="button" onclick="toggleMenu()" aria-label="Open menu" aria-expanded="false">☰</button>
             <ul id="nav-menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="showroom.html">Showroom</a></li>
@@ -35,7 +29,6 @@
             </ul>
         </nav>
     </header>
-
 
     <main>
         <section class="contact">
@@ -47,47 +40,42 @@
                 <address>
                     Gruppo Del Diamante Compound<br>
                     Beside Powerhouse Church and Lalamove Pampanga Office<br>
-                    Pandan, Magalang Ave, <br>
+                    Pandan, Magalang Ave,<br>
                     Angeles City, Pampanga, Philippines<br>
                 </address>
             </div>
+
             <div class="contact-form">
-            <h2>CONTACT US NOW!</h2>
-            <p>We would love to hear from you! Please fill out the form below and we will get back to you as soon as possible.</p>
-
-            <form>
-                <h3>Contact Form</h3>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="services">Option:</label>
-                <select id="services" name="services" required>
-                    <option value="Furniture">Furniture</option>
-                    <option value="Consultation">Consultation</option>
-                    <option value="Inquiry">Inquiry</option>
-                </select>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-
-                <button type="submit">Submit</button>
-            </form>
-
+                <h2>CONTACT US NOW!</h2>
+                <p>We would love to hear from you! Please fill out the form below and we will get back to you as soon as possible.</p>
+                <form>
+                    <h3>Contact Form</h3>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="services">Option:</label>
+                    <select id="services" name="services" required>
+                        <option value="Furniture">Furniture</option>
+                        <option value="Consultation">Consultation</option>
+                        <option value="Inquiry">Inquiry</option>
+                    </select>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
             </div>
         </section>
-
     </main>
 
     <footer>
-
+        <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=61563096398070" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <img src="img/facebook.svg" alt="Facebook">
+                <span>Visit our Facebook page</span>
+            </a>
+        </div>
         <p>&copy; 2026 Casa San Maza Furniture & Accessories Inc | All rights reserved</p>
-
     </footer>
-
-
 </body>
-
 </html>

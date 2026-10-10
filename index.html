@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <!--
@@ -8,21 +9,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casa San Maza Furniture & Accessories Inc</title>
+    <title>Home | Casa San Maza Furniture & Accessories Inc.</title>
+    <meta name="description" content="Discover Casa San Maza Furniture & Accessories Inc., an interior design and furniture-making company creating thoughtfully designed spaces and custom furniture.">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script src="CSM_Script.js"></script>
+    <script src="CSM_Script.js" defer></script>
 </head>
-
 <body>
     <header>
         <nav>
             <div class="logo"><a href="index.html">CSM</a></div>
-
-            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
-
+            <button class="menu-toggle" type="button" onclick="toggleMenu()" aria-label="Open menu" aria-expanded="false">☰</button>
             <ul id="nav-menu">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="showroom.html">Showroom</a></li>
@@ -36,7 +35,6 @@
         <div class="main-logo">
             <img src="img/csm-logo.png" alt="CSM Logo">
         </div>
-
         <p class="home-description">
             <span>
                 Casa San Maza Furniture & Accessories, Inc.
@@ -47,10 +45,8 @@
                 concepts to life.
             </span>
         </p>
-
         <img src="img/CSM2.jpg" alt="Dining Room with Kitchen" class="csm2">
         <img src="img/CSM3.jpg" alt="Dining Room with Kitchen" class="csm3">
-
         <section class="link-showroom">
             <p>Want to see more?</p>
             <a href="showroom.html" class="home-showroom">Visit Our Showroom</a>
@@ -58,6 +54,12 @@
     </main>
 
     <footer>
+        <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=61563096398070" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <img src="img/facebook.svg" alt="Facebook">
+                <span>Visit our Facebook page</span>
+            </a>
+        </div>
         <p>&copy; 2026 Casa San Maza Furniture & Accessories Inc | All rights reserved</p>
     </footer>
 </body>

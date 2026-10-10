@@ -8,21 +8,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Casa San Maza Furniture & Accessories Inc</title>
+    <title>Showroom | Casa San Maza Furniture & Accessories Inc.</title>
+    <meta name="description" content="Explore the Casa San Maza showroom gallery featuring interior designs, furniture, and thoughtfully crafted spaces.">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script src="CSM_Script.js"></script>
+    <script src="CSM_Script.js" defer></script>
 </head>
-
 <body>
     <header>
         <nav>
             <div class="logo"><a href="index.html">CSM</a></div>
-
-            <button class="menu-toggle" type="button" onclick="toggleMenu()" aria-label="Open menu">☰</button>
-
+            <button class="menu-toggle" type="button" onclick="toggleMenu()" aria-label="Open menu" aria-expanded="false">☰</button>
             <ul id="nav-menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="showroom.html" class="active">Showroom</a></li>
@@ -40,7 +38,6 @@
 
         <section class="showroom-audio">
             <p>Take a moment to experience the atmosphere of Casa San Maza.</p>
-
             <audio controls>
                 <source src="media/piano-placeholder.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
@@ -48,10 +45,12 @@
         </section>
 
         <section class="showroom-gallery">
-
             <div class="showroom-item">
-                <img src="img/CSM11.jpg" alt="Modern Bedroom">
-
+                <div class="showroom-photos">
+                    <img src="img/bedroom1.jpg" alt="Modern Bedroom">
+                    <img src="img/bedroom2.jpg" alt="Classic light wooden Bedroom">
+                    <img src="img/bedroom3.jpg" alt="Classic dark wooden Bedroom">
+                </div>
                 <div class="showroom-caption">
                     <h2>Bedroom</h2>
                     <p>Comfortable spaces designed with style and functionality.</p>
@@ -59,8 +58,10 @@
             </div>
 
             <div class="showroom-item">
-                <img src="img/CSM10.jpg" alt="Elegant dining room">
-
+                <div class="showroom-photos">
+                    <img src="img/dining1.jpg" alt="Modern dining room">
+                    <img src="img/dining2.jpg" alt="Elegant dining room">
+                </div>
                 <div class="showroom-caption">
                     <h2>Dining Area</h2>
                     <p>Thoughtfully designed spaces for gathering and connection.</p>
@@ -68,8 +69,11 @@
             </div>
 
             <div class="showroom-item">
-                <img src="img/CSM8.jpg" alt="Classic Living Room">
-
+                <div class="showroom-photos">
+                    <img src="img/livroom1.jpg" alt="Classic Living Room">
+                    <img src="img/livroom2.jpg" alt="Colorful Living Room">
+                    <img src="img/livroom3.jpg" alt="Modern Living Room">
+                </div>
                 <div class="showroom-caption">
                     <h2>Living Room</h2>
                     <p>A balance of comfort, simplicity, and timeless design.</p>
@@ -77,8 +81,11 @@
             </div>
 
             <div class="showroom-item">
-                <img src="img/CSM13.jpg" alt="Modern kitchen">
-
+                <div class="showroom-photos">
+                    <img src="img/kitchen1.jpg" alt="Modern kitchen">
+                    <img src="img/kitchen2.jpg" alt="Elegant kitchen">
+                    <img src="img/kitchen3.jpg" alt="Elegant marbled kitchen">
+                </div>
                 <div class="showroom-caption">
                     <h2>Kitchen</h2>
                     <p>Functional interiors with carefully selected details.</p>
@@ -86,18 +93,31 @@
             </div>
 
             <div class="showroom-item">
-                <img src="img/CSM15.jpg" alt="Custom furniture">
-
+                <div class="showroom-photos">
+                    <img src="img/custom1.jpg" alt="Custom Couch">
+                    <img src="img/custom2.jpg" alt="Custom buffet cabinet">
+                    <img src="img/custom3.jpg" alt="Custom dresser">
+                    <img src="img/custom4.jpg" alt="Custom arm chair with table">
+                    <img src="img/custom5.jpg" alt="Custom vanity with mirror">
+                    <img src="img/custom6.jpg" alt="Custom cabinet">
+                    <img src="img/custom7.jpg" alt="Custom vanity">
+                    <img src="img/custom8.jpg" alt="Custom 3-section couch">
+                </div>
                 <div class="showroom-caption">
                     <h2>Custom Furniture</h2>
                     <p>Furniture crafted to complement each unique space.</p>
                 </div>
             </div>
-
         </section>
     </main>
 
     <footer>
+        <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=61563096398070" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                <img src="img/facebook.svg" alt="Facebook">
+                <span>Visit our Facebook page</span>
+            </a>
+        </div>
         <p>&copy; 2026 Casa San Maza Furniture & Accessories Inc | All rights reserved</p>
     </footer>
 </body>
